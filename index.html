@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -10,10 +10,10 @@
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
+  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
 
 <body>
@@ -25,37 +25,39 @@
         <div class="wrapper">
           <h1 class="heading">Tab Filter</h1>
           <ul class="tab-nav">
-            <li class="nav-item"><a href="#FIXME">all</a></li>
-            <li class="nav-item"><a href="#FIXME">men</a></li>
-            <li class="nav-item"><a href="#FIXME">women</a></li>
-            <li class="nav-item"><a href="#FIXME">children</a></li>
-            <li class="nav-item"><a href="#FIXME">girl</a></li>
-            <li class="nav-item"><a href="#FIXME">boy</a></li>
-            <li class="nav-item"><a href="#FIXME">trans Gender</a></li>
+            <li class="nav-item"><a href="#FIXME" title="All" class="category" data-target="All">all</a></li>
+            <li class="nav-item"><a href="#FIXME" title="Men" class="category" data-target="Men">men</a></li>
+            <li class="nav-item"><a href="#FIXME" title="Women" class="category" data-target="Women">women</a></li>
+            <li class="nav-item"><a href="#FIXME" title="Children" class="category" data-target="Children">children</a>
+            </li>
+            <li class="nav-item"><a href="#FIXME" title="Girl" class="category" data-target="Girl">girl</a></li>
+            <li class="nav-item"><a href="#FIXME" title="Boy" class="category" data-target="Boy">boy</a></li>
+            <li class="nav-item"><a href="#FIXME" title="Trans Gender" class="category" data-target="Gender">trans
+                Gender</a></li>
           </ul>
           <ul class="filter-list">
-            <li class="filter-item">men</li>
-            <li class="filter-item">boy</li>
-            <li class="filter-item">man</li>
-            <li class="filter-item">women</li>
-            <li class="filter-item">trans gender</li>
-            <li class="filter-item">men</li>
-            <li class="filter-item">women</li>
-            <li class="filter-item">men</li>
-            <li class="filter-item">boy</li>
-            <li class="filter-item">girl</li>
-            <li class="filter-item">women</li>
-            <li class="filter-item">children</li>
-            <li class="filter-item">boy</li>
-            <li class="filter-item">girl</li>
-            <li class="filter-item">children</li>
-            <li class="filter-item">women</li>
-            <li class="filter-item">boy</li>
-            <li class="filter-item">girl</li>
-            <li class="filter-item">children</li>
-            <li class="filter-item">trans gender</li>
+            <li class="filter-item men" data-target="Men">men</li>
+            <li class="filter-item boy" data-target="Boy">boy</li>
+            <li class="filter-item men" data-target="Men">men</li>
+            <li class="filter-item women" data-target="Women">women</li>
+            <li class="filter-item gender" data-target="Gender">trans gender</li>
+            <li class="filter-item men" data-target="Men">men</li>
+            <li class="filter-item women" data-target="Women">women</li>
+            <li class="filter-item men" data-target="Men">men</li>
+            <li class="filter-item boy" data-target="Boy">boy</li>
+            <li class="filter-item girl" data-target="Girl">girl</li>
+            <li class="filter-item women" data-target="Women">women</li>
+            <li class="filter-item children" data-target="Children">children</li>
+            <li class="filter-item boy" data-target="Boy">boy</li>
+            <li class="filter-item girl" data-target="Girl">girl</li>
+            <li class="filter-item children" data-target="Children">children</li>
+            <li class="filter-item women" data-target="Women">women</li>
+            <li class="filter-item boy" data-target="Boy">boy</li>
+            <li class="filter-item girl" data-target="Girl">girl</li>
+            <li class="filter-item children" data-target="Children">children</li>
+            <li class="filter-item gender" data-target="Gender">trans gender</li>
           </ul>
-          </div>
+        </div>
       </section>
     </main>
     <!--main section end-->
@@ -63,4 +65,5 @@
   <!--container end-->
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
