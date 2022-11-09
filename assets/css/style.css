@@ -102,6 +102,7 @@ li {
   max-width: 1360px;
   width: 86%; 
   margin: 0 auto;
+  overflow: hidden;
 }
 
 *{
@@ -157,11 +158,16 @@ a.active,
 .filter-item {
   padding: 70px 4%;
   margin: 15px;
+  display: none;
+  align-items: center;
+  justify-content: center;
   flex-basis: 19%;
   color: #fff;
   text-align: center;
   font-size: 20px;
 }
+
+.filter-item.show{ display: flex; }
 
 .men { background: #1c1c; }
 .women { background: #949494; }
@@ -173,9 +179,33 @@ a.active,
   main styling ends here
 =================================*/
 /*media query starts*/
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+.filter-item { flex-basis: 20%; }
+} 
+/*media query for 995px end here*/
 
+/*media query for 780px starts here*/
+@media only screen and (max-width: 780px) {
+  .wrapper { width: 100%; }
+  .tab-nav { gap: 5px;}
+  .filter-item { flex-basis: 27%; }
+  .nav-item a{
+    padding: 8px;
+    font-size: 15px;
+  }
+  } 
+/*media query for 780px end here*/
 
-
-}  
+/*media query for 480px starts here*/
+@media only screen and (max-width: 480px) {
+  .tab-nav { flex-wrap:  wrap; }
+  
+  .nav-item a {
+    padding: 8px;
+    font-size: 16px;
+  }
+  .filter-list { flex-direction: column; }
+}
+/*media query for 480px end here*/
